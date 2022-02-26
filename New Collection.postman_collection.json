@@ -1,0 +1,1079 @@
+{
+	"info": {
+		"_postman_id": "9800f364-f303-43d9-b577-6bbd2eaf95c5",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "User Details",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"user"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "User Details",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"user"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "52"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"34-olc1grcd631tIxWn6r+N5rHg0gs\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 25 Feb 2022 07:13:08 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [
+						{
+							"expires": "Invalid Date"
+						}
+					],
+					"body": "{\n    \"username\": \"root\",\n    \"follower\": null,\n    \"following\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "New Post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "title",
+							"value": "Lion King",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "This is king",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/posts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"posts"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New  Post",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "title",
+									"value": "Lion King",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "This is king",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/posts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"posts"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "253"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"fd-y4iF5cTg4lrWqo+FOq3L6NJhdPs\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 25 Feb 2022 07:03:27 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [
+						{
+							"expires": "Invalid Date"
+						}
+					],
+					"body": "{\n    \"postId\": \"71924fdc-f043-44cc-8f79-e7baae9c4478\",\n    \"title\": \"Lion King\",\n    \"userId\": \"1f1ecc40-f7bb-400b-bb85-8ff5c4db0f1a\",\n    \"description\": \"This is king\",\n    \"updatedAt\": \"2022-02-25T07:03:26.962Z\",\n    \"createdAt\": \"2022-02-25T07:03:26.962Z\",\n    \"likes\": null,\n    \"comments\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "View Post",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/posts//9b1a61fe-dfb2-47c1-bcba-b7f22c83bf9a",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"posts",
+						"",
+						"9b1a61fe-dfb2-47c1-bcba-b7f22c83bf9a"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "View Post",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/posts/b265b940-2a3f-4cc6-af39-115abff4cf20",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"posts",
+								"b265b940-2a3f-4cc6-af39-115abff4cf20"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "175"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"af-D69BirN0SGW4Um6UFyjxTm2y8T8\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 25 Feb 2022 11:34:03 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [
+						{
+							"expires": "Invalid Date"
+						}
+					],
+					"body": "{\n    \"postId\": \"9b1a61fe-dfb2-47c1-bcba-b7f22c83bf9a\",\n    \"title\": \"my first post\",\n    \"description\": \"I like MediaChats\",\n    \"createdAt\": \"2022-02-25T07:01:22.605Z\",\n    \"likes\": null,\n    \"comments\": null\n}"
+				},
+				{
+					"name": "View Post",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/posts/d4672079-c3ef-4f73-a59d-5fcf9806b5db",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"posts",
+								"d4672079-c3ef-4f73-a59d-5fcf9806b5db"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "257"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"101-KNBndFdsmuQYKcyPmh72lk6bAfs\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 26 Feb 2022 13:57:37 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"postId\": \"d4672079-c3ef-4f73-a59d-5fcf9806b5db\",\n    \"title\": \"VIP \",\n    \"description\": \"Importance Notice\",\n    \"createdAt\": \"2022-02-26T13:51:23.546Z\",\n    \"likes\": [\n        \"jane\"\n    ],\n    \"comments\": [\n        {\n            \"commentID\": \"24ae5793-989f-4054-9e91-188dc26a268b\",\n            \"username\": \"jane\",\n            \"comment\": \"Thanks\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete Post",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/posts/9b1a61fe-dfb2-47c1-bcba-b7f22c83bf9a",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"posts",
+						"9b1a61fe-dfb2-47c1-bcba-b7f22c83bf9a"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Delete Post",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/posts/9b1a61fe-dfb2-47c1-bcba-b7f22c83bf9a",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"posts",
+								"9b1a61fe-dfb2-47c1-bcba-b7f22c83bf9a"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "12"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"c-XE/qNynNBjvhlU9ZynPpvU4xVSM\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 25 Feb 2022 13:47:51 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "Post Deleted"
+				}
+			]
+		},
+		{
+			"name": "All Post",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/all_post",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"all_post"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "All Post",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/all_post",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"all_post"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "335"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"14f-eoBfBxGiyrPiRconXlbFTyHtqrM\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 25 Feb 2022 13:53:44 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"postId\": \"b265b940-2a3f-4cc6-af39-115abff4cf20\",\n        \"title\": \"Lion King\",\n        \"description\": \"This is king\",\n        \"createdAt\": \"2022-02-25T13:53:08.791Z\",\n        \"likes\": null,\n        \"comments\": null\n    },\n    {\n        \"postId\": \"ae9694ff-4676-4ae8-bfa2-57f0b97679d1\",\n        \"title\": \"VIP \",\n        \"description\": \"Importance Notice\",\n        \"createdAt\": \"2022-02-25T13:53:38.504Z\",\n        \"likes\": null,\n        \"comments\": null\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Like Post",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI0MjJkM2QwYy0wMzYzLTRhYTgtOTA3OC1mMDgxYzkwZDVhZDMiLCJ1c2VybmFtZSI6ImphbmUiLCJpYXQiOjE2NDU4NzU3NTUsImV4cCI6MTY0NTk0Nzc1NX0.12cnBw349bg02PdTuBaI0Tm81MpfBhzdJjRvlOxxbls",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/like/d4672079-c3ef-4f73-a59d-5fcf9806b5db",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"like",
+						"d4672079-c3ef-4f73-a59d-5fcf9806b5db"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Like Post",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/like/d4672079-c3ef-4f73-a59d-5fcf9806b5db",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"like",
+								"d4672079-c3ef-4f73-a59d-5fcf9806b5db"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "3"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"3-9imuRLez3P7URNNj5ibt9BHsaag\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 26 Feb 2022 13:56:15 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    1\n]"
+				},
+				{
+					"name": "Like Post",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/like/d4672079-c3ef-4f73-a59d-5fcf9806b5db",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"like",
+								"d4672079-c3ef-4f73-a59d-5fcf9806b5db"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "33"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"21-5khscAeo9sHmM/J0a4pHtb5Pijs\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 26 Feb 2022 14:24:09 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [
+						{
+							"expires": "Invalid Date"
+						}
+					],
+					"body": "{\n    \"message\": \"Post Already liked!\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Add New Comment",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "text",
+							"value": "Thanks",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/comment/b265b940-2a3f-4cc6-af39-115abff4cf20",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"comment",
+						"b265b940-2a3f-4cc6-af39-115abff4cf20"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "All Users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/user/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"user",
+						"all"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "All Users",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/user/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"user",
+								"all"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1113"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"459-qjGrOdAWC/ecqQg+Br+QJPOTtG0\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 26 Feb 2022 07:12:09 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"username\": \"root\",\n        \"userId\": \"f8ec23f1-2f60-4af7-a095-eee5c9409eab\",\n        \"follower\": null,\n        \"following\": null\n    },\n    {\n        \"username\": \"jane\",\n        \"userId\": \"422d3d0c-0363-4aa8-9078-f081c90d5ad3\",\n        \"follower\": null,\n        \"following\": null\n    },\n    {\n        \"username\": \"hope\",\n        \"userId\": \"f0c80a73-78bc-4672-b4e6-0584b3726a78\",\n        \"follower\": null,\n        \"following\": null\n    },\n    {\n        \"username\": \"kiya\",\n        \"userId\": \"218a46c4-5185-43b6-997f-52ecf0f52d01\",\n        \"follower\": null,\n        \"following\": null\n    },\n    {\n        \"username\": \"sam\",\n        \"userId\": \"97d37248-27a7-4332-a998-ec5c3041a596\",\n        \"follower\": null,\n        \"following\": null\n    },\n    {\n        \"username\": \"vigo\",\n        \"userId\": \"7aaf4d1a-c90f-4cb2-a191-8321f384a5de\",\n        \"follower\": null,\n        \"following\": null\n    },\n    {\n        \"username\": \"fiizz\",\n        \"userId\": \"cf6e5aef-6aa8-4879-aa48-25cb2f7e1758\",\n        \"follower\": null,\n        \"following\": null\n    },\n    {\n        \"username\": \"zate\",\n        \"userId\": \"82311da5-a639-4a7a-a27c-0563959e6f18\",\n        \"follower\": null,\n        \"following\": null\n    },\n    {\n        \"username\": \"henry\",\n        \"userId\": \"7f599063-2717-4275-8be8-b816395555b4\",\n        \"follower\": null,\n        \"following\": null\n    },\n    {\n        \"username\": \"john\",\n        \"userId\": \"166a4ee1-e431-4fc3-940b-d4c35d8be764\",\n        \"follower\": null,\n        \"following\": null\n    },\n    {\n        \"username\": \"alii\",\n        \"userId\": \"4e950de8-6f75-4cd9-9f98-87331994c707\",\n        \"follower\": null,\n        \"following\": null\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Register New User(onetime)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "zate",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "zate@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "zate",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/user/new",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"user",
+						"new"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Register New User(onetime)",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "alii",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "alii@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "alii",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/user/new",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"user",
+								"new"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "92"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"5c-Eet5QBkBjNWamFAcoikP1ZlsaPk\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 26 Feb 2022 07:12:00 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"username\": \"alii\",\n    \"userId\": \"4e950de8-6f75-4cd9-9f98-87331994c707\",\n    \"email\": \"alii@gmail.com\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Follow Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/follow/b223bd48-79ab-4df4-8bca-fe3af2f8a4a4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"follow",
+						"b223bd48-79ab-4df4-8bca-fe3af2f8a4a4"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Follow Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/follow/4e950de8-6f75-4cd9-9f98-87331994c707",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"follow",
+								"4e950de8-6f75-4cd9-9f98-87331994c707"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "39"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"27-E0jUzfId72yCSD+CjCVD4ikdMO0\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 26 Feb 2022 10:02:52 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [
+						{
+							"expires": "Invalid Date"
+						}
+					],
+					"body": "{\n    \"message\": \"User follow Successfully!\"\n}"
+				}
+			]
+		},
+		{
+			"name": "User auth",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "root@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "root",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/authenticate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"authenticate"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "auth",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "root@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "root",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/authenticate",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"authenticate"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "228"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"e4-2dTlhreo4nh5ZE9ToWvHqH8ttDI\""
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "sessionabs=s%3A0PBR5xQChPmxqIht6MEOXcIMm8Ksjezs.h7kY0sQHAVKb6iPDPVPest0u03Hl7Xt1MVVpLesNHkU; Path=/; Expires=Sat, 05 Mar 2022 06:29:54 GMT; HttpOnly"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 26 Feb 2022 06:29:54 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJmOGVjMjNmMS0yZjYwLTRhZjctYTA5NS1lZWU1Yzk0MDllYWIiLCJ1c2VybmFtZSI6InJvb3QiLCJpYXQiOjE2NDU4NTY5OTQsImV4cCI6MTY0NTkyODk5NH0.fQE7b0pSclhiWT8QI0CY2cqGD6wZUs7n5PSxXkp6pR4\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Unfollow Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/unfollow/f8ec23f1-2f60-4af7-a095-eee5c9409eab",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"unfollow",
+						"f8ec23f1-2f60-4af7-a095-eee5c9409eab"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UnLike Post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		}
+	]
+}
